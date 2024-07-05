@@ -21,12 +21,12 @@ UUID = os.environ.get('UUID', 'abe2f2de-13ae-4f1f-bea5-d6c881ce6888')
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nz.abcd.com')        # 哪吒3个变量不全不运行
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '5555')                  # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')                   # 国定隧道域名，留空即启用临时隧道
-ARGO_AUTH = os.environ.get('ARGO_AUTH', '')                      # 国定隧道json或token，留空即启用临时隧道
-CFIP = os.environ.get('CFIP', 'skk.moe')
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 't.afa88.filegear-sg.me')                   # 国定隧道域名，留空即启用临时隧道
+ARGO_AUTH = os.environ.get('ARGO_AUTH', eyJhIjoiZWU4NWQ5YmQwNTI0OThhNmIwNWY0N2NjZmQ1YjM1MzIiLCJ0IjoiYzQyMDU0YjctNDdlMS00NGEwLTg4MTAtNTc4ZTJkM2FlMmEwIiwicyI6Ik9HUm1OMkU1TkdZdE1HSTNZUzAwTUdFMkxXRmhOVFF0TWpZd01tTXhZbVptWmpCbCJ9')                      # 国定隧道json或token，留空即启用临时隧道
+CFIP = os.environ.get('CFIP', 'ip.sb')
 NAME = os.environ.get('NAME', 'Vls')
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000)  # 订阅端口，游戏玩具类若无法订阅可改为分配的端口
-ARGO_PORT = int(os.environ.get('ARGO_PORT', 8001))       # Argo端口，固定隧道token请改回8080或在cf后台设置的端口与这里对应
+ARGO_PORT = int(os.environ.get('ARGO_PORT', 8008))       # Argo端口，固定隧道token请改回8080或在cf后台设置的端口与这里对应
 CFPORT = int(os.environ.get('CFPORT', 443))           # 节点端口
 
 # Create directory if it doesn't exist
